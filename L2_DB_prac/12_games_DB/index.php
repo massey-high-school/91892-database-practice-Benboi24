@@ -1,66 +1,15 @@
-<!DOCTYPE HTML>
+    <?php include("topbit.php"); ?>
 
-<html lang="en">
-    
-<?php
-    
-    session_start(): // to allow variable transfer between pages...
-    include("config.php");
-    
-    // Connect to database....
-    $dbconect=mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
-    
-    if(mysqli_connect_errno()) {
-    echo "Connection failed;".mysqli_connect_error();
-    exit;
-    }
-    
-    ?>
+          <div class="box main">
+              <h2>Welcome</h2>
+              
+              
+              <p>
+                  This database includes some of the most popular apps avaliable for mobile devices. The <a href="https://www.kaggle.com/tristan581/17k-apple-app-store-strategy-games/version/1">orginal dataset </a> can be found at the preceding link.
+              </p>
+              
+              
+              
+          </div> <!-- / main -->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="games, apps, ">
-    <meta name="GTT" content="Game / App Database">
-    <meta name="keywords" content="games, apps, ratings">
-    
-    <title>Game Database</title>
-
-    <!-- for multiple fonts change | to %7c * no spaces*  -->
-    <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet">  
-
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/data_style.css">    <!-- custom style sheet -->
-
-    
-
-            
-        <div class="box main">
-            <h2>Welcome</h2>
-            
-            
-            <p>
-                Put link to original dataset here
-            </p>
-            
-
-            
-        </div> <!-- / main -->
-        
-        <div class="box side">
-           
-           <h2>Search Area</h2>
-           
-           <p>This is where the search area goes
-
-            
-        </div> <!-- / side bar -->
-        
-        <div class="box footer">
-            CC GTT 20XX
-        </div> <!-- / footer -->
-                
-        
-    </div> <!-- / wrapper -->
-    
-            
-</body>
+    <?php include("bottombit.php") ?>

@@ -1,4 +1,4 @@
-        <div class="boxside">
+        <div class="box side">
             
             <h2>Add an App  |
                 <a class="side" href="showall.php"> Show
